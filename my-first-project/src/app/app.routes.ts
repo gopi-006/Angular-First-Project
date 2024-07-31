@@ -4,12 +4,13 @@ import { FormsComponent } from '../forms/forms.component';
 import { ParentComponent } from './parent/parent.component';
 import { HomeComponent } from './home/home.component';
 import { ChildComponent } from './child/child.component';
+import { HouseComponent } from './house/house.component';
 
 export const routes: Routes = [
     {
-        path:'',
+        path:'child',
      title:'',
-     component:HomeComponent,
+     component:ChildComponent,
     },
     {
         path:'home',
@@ -27,5 +28,9 @@ export const routes: Routes = [
      component:ParentComponent,
     },
    
-    
+    {
+        path:'house',
+        title:'',
+        component:HouseComponent
+    }
 ];
